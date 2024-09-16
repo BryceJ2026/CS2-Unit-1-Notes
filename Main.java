@@ -71,5 +71,34 @@ public class Main {
       score /= 3; //returns 2, same operation as score = score/3;
       score *= 732; // returs 1464, sameop. as score = score*732;
       System.out.println(score);
+
+
+      // CASTING
+      double g = 9.81;
+      int g_cast = (int) g;
+      System.out.println(g_cast);
+
+      // casting from an INT to a DOUBLE is a WIDENING CONVERSION
+      int num = 10;
+      double num_cast = (double) num;
+
+      // ROUNDING BY CASTING
+      double posNumber = 6.78;
+      double negNumber = -273.15;
+
+      // round a positive num to the nearest Int
+      int nearestPosInt = (int)(posNumber + 0.5);
+      System.out.println(nearestPosInt);
+      // round a negative num to the nearest Int
+      int nearestNegInt = (int)(negnumber - 0.5);
+      System.out.println(nearestNegInt);
+
+
+      // NOTE: primitive types take up different amts of MEMORY
+      System.out.println(Interger.MIN_VALUE);
+      System.out.println(Interger.MAX_VALUE);
+
+      // int badInterger = 9147483647;
+
    }
 }
